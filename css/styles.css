@@ -1,0 +1,115 @@
+﻿@font-face {
+    font-family: 'BonvenoCF-Light-webfont';
+    src: url('../fonts/BonvenoCF-Light-webfont.eot');
+    src: url('../fonts/BonvenoCF-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BonvenoCF-Light-webfont.woff') format('woff'),
+         url('../fonts/BonvenoCF-Light-webfont.ttf') format('truetype'),
+         url('../fonts/BonvenoCF-Light-webfont.svg#BonvenoCF-Light-webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{    
+	font-family: 'BonvenoCF-Light-webfont', Arial, serif;
+	text-align: center;
+}
+
+section
+{
+	width: 20%;
+	height: 30%;
+	margin: 2%;
+	overflow: auto;
+	display: inline-block;
+	vertical-align: top;
+}
+
+li
+{
+	list-style-image : url('../img/puces_mini.png');
+}
+
+.entete
+{
+	font-size: 1.5em;
+	margin-bottom: 100px;
+}
+
+.corpsduCV
+{
+	font-size: 1.2em;
+	text-align: left;
+}
+
+.contenu {
+    color: rgb(250,50,50);
+    -ms-text-shadow: 2px 2px 4px black;
+    text-shadow: 2px 2px 4px black;
+}
+
+.sidebar {
+    float: left;
+    width: 10%;
+    height: 900px;
+    background: #FFCC00;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+	vertical-align: top;
+}
+
+#nom
+{
+	text-decoration: underline;
+	border: 1px dashed;
+	padding: 0;
+	display: inline-block;
+	font-size: 1.5em;
+}
+
+#titre
+{
+	font-size: 1.5em;
+}
+
+#photo
+{
+	float: right;
+	max-height: 20%;
+	max-width: 20%;
+}
+
+@media all and (max-width: 1024px)
+{
+	section
+	{
+		width: 70%;
+		margin:0 auto;
+		padding-left: 15%;
+		height: 30%;
+		text-align: left;
+	}
+	
+	.entete
+	{
+		font-size: 2.2em;
+		margin-bottom: 100px;
+		text-align: center;
+	}
+	
+    .sidebar
+	{
+		display: none;
+	}
+	
+	.corpsduCV
+	{
+		font-size: 1.9em;
+		text-align: left;
+	}
+		
+	#nom
+	{
+		border: none;
+	}
+}
